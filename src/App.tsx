@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Todolist, {TaskPropsType} from "./components/Todolist";
+import Todolist, {TaskType} from "./components/Todolist";
 import {v1} from "uuid";
 import AddItemForm from "./components/AddItemForm";
 import {AppBar, Button, Container, Grid, IconButton, Paper, Toolbar, Typography} from "@material-ui/core";
@@ -12,7 +12,7 @@ export type TodoListType = {
     filter: FilterValueType
 }
 export type TasksStateType = {
-    [key: string]: Array<TaskPropsType>
+    [key: string]: Array<TaskType>
 }
 
 function App() {
