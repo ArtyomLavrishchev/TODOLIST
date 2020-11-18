@@ -1,6 +1,4 @@
 import React from 'react';
-import {action} from "@storybook/addon-actions";
-import {Task} from "../components/Task";
 import AppWithRedux from "../AppWithRedux";
 import {ReduxStoreProviderDecorator} from "./decorators/ReduxStoreProviderDecorator";
 
@@ -12,7 +10,7 @@ export default {
 
 export const AppWithReduxBaseExample = (props: any) => {
     return (
-            <AppWithRedux
-            />
+        <AppWithRedux
+        />
     )
 };
