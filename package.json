@@ -2,6 +2,7 @@
   "name": "todolist",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://artyomlavrishchev.github.io/TODOLIST",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -20,6 +21,7 @@
     "react-redux": "^7.2.1",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "typescript": "~3.7.2",
     "uuid": "^8.3.0"
   },
@@ -31,7 +33,9 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "jest:integration": "jest -c integration/jest.config.js",
-    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration"
+    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
